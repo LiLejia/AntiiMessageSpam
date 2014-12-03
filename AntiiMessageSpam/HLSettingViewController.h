@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HLSettingViewController : UIViewController
+@interface HLSetttingCell : UITableViewCell
+
+@end
+
+@interface HLSettingViewController : UITableViewController
+
+
 
 @end
