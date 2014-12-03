@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA6E28E51A2C6BE800E7CFC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6E28E41A2C6BE800E7CFC6 /* main.m */; };
+		BA6E28E81A2C6BE800E7CFC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6E28E71A2C6BE800E7CFC6 /* AppDelegate.m */; };
+		BA6E28EE1A2C6BE800E7CFC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6E28EC1A2C6BE800E7CFC6 /* Main.storyboard */; };
+		BA6E28F01A2C6BE800E7CFC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6E28EF1A2C6BE800E7CFC6 /* Images.xcassets */; };
+		BA6E28F31A2C6BE800E7CFC6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6E28F11A2C6BE800E7CFC6 /* LaunchScreen.xib */; };
+		BA6E28FF1A2C6BE800E7CFC6 /* AntiiMessageSpamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6E28FE1A2C6BE800E7CFC6 /* AntiiMessageSpamTests.m */; };
+		BA6E29121A2C6C8500E7CFC6 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6E29111A2C6C8500E7CFC6 /* ShareViewController.m */; };
+		BA6E29141A2C6C8500E7CFC6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6E29131A2C6C8500E7CFC6 /* MainInterface.storyboard */; };
+		BA6E29171A2C6C8500E7CFC6 /* EmailSpam.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BA6E290C1A2C6C8500E7CFC6 /* EmailSpam.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BA6E29291A2F2DC600E7CFC6 /* HLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6E29281A2F2DC600E7CFC6 /* HLSettingViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA6E28F91A2C6BE800E7CFC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA6E28D71A2C6BE800E7CFC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA6E28DE1A2C6BE800E7CFC6;
+			remoteInfo = AntiiMessageSpam;
+		};
+		BA6E29151A2C6C8500E7CFC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA6E28D71A2C6BE800E7CFC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA6E290B1A2C6C8500E7CFC6;
+			remoteInfo = EmailSpam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA6E291B1A2C6C8500E7CFC6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BA6E29171A2C6C8500E7CFC6 /* EmailSpam.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BA6E28DF1A2C6BE800E7CFC6 /* AntiiMessageSpam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntiiMessageSpam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6E28E31A2C6BE800E7CFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6E28E41A2C6BE800E7CFC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA6E28E61A2C6BE800E7CFC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA6E28E71A2C6BE800E7CFC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA6E28ED1A2C6BE800E7CFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA6E28EF1A2C6BE800E7CFC6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BA6E28F21A2C6BE800E7CFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BA6E28F81A2C6BE800E7CFC6 /* AntiiMessageSpamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntiiMessageSpamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6E28FD1A2C6BE800E7CFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6E28FE1A2C6BE800E7CFC6 /* AntiiMessageSpamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiiMessageSpamTests.m; sourceTree = "<group>"; };
+		BA6E290C1A2C6C8500E7CFC6 /* EmailSpam.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EmailSpam.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6E290F1A2C6C8500E7CFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6E29101A2C6C8500E7CFC6 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		BA6E29111A2C6C8500E7CFC6 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		BA6E29131A2C6C8500E7CFC6 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		BA6E291C1A2C798D00E7CFC6 /* EmailSpam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EmailSpam.entitlements; sourceTree = "<group>"; };
+		BA6E29271A2F2DC600E7CFC6 /* HLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSettingViewController.h; sourceTree = "<group>"; };
+		BA6E29281A2F2DC600E7CFC6 /* HLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSettingViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA6E28DC1A2C6BE800E7CFC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6E28F51A2C6BE800E7CFC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6E29091A2C6C8500E7CFC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA6E28D61A2C6BE800E7CFC6 = {
+			isa = PBXGroup;
+			children = (
+				BA6E28E11A2C6BE800E7CFC6 /* AntiiMessageSpam */,
+				BA6E28FB1A2C6BE800E7CFC6 /* AntiiMessageSpamTests */,
+				BA6E290D1A2C6C8500E7CFC6 /* EmailSpam */,
+				BA6E28E01A2C6BE800E7CFC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA6E28E01A2C6BE800E7CFC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA6E28DF1A2C6BE800E7CFC6 /* AntiiMessageSpam.app */,
+				BA6E28F81A2C6BE800E7CFC6 /* AntiiMessageSpamTests.xctest */,
+				BA6E290C1A2C6C8500E7CFC6 /* EmailSpam.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA6E28E11A2C6BE800E7CFC6 /* AntiiMessageSpam */ = {
+			isa = PBXGroup;
+			children = (
+				BA6E28E61A2C6BE800E7CFC6 /* AppDelegate.h */,
+				BA6E28E71A2C6BE800E7CFC6 /* AppDelegate.m */,
+				BA6E29271A2F2DC600E7CFC6 /* HLSettingViewController.h */,
+				BA6E29281A2F2DC600E7CFC6 /* HLSettingViewController.m */,
+				BA6E28EC1A2C6BE800E7CFC6 /* Main.storyboard */,
+				BA6E28EF1A2C6BE800E7CFC6 /* Images.xcassets */,
+				BA6E28F11A2C6BE800E7CFC6 /* LaunchScreen.xib */,
+				BA6E28E21A2C6BE800E7CFC6 /* Supporting Files */,
+			);
+			path = AntiiMessageSpam;
+			sourceTree = "<group>";
+		};
+		BA6E28E21A2C6BE800E7CFC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA6E28E31A2C6BE800E7CFC6 /* Info.plist */,
+				BA6E28E41A2C6BE800E7CFC6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA6E28FB1A2C6BE800E7CFC6 /* AntiiMessageSpamTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA6E28FE1A2C6BE800E7CFC6 /* AntiiMessageSpamTests.m */,
+				BA6E28FC1A2C6BE800E7CFC6 /* Supporting Files */,
+			);
+			path = AntiiMessageSpamTests;
+			sourceTree = "<group>";
+		};
+		BA6E28FC1A2C6BE800E7CFC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA6E28FD1A2C6BE800E7CFC6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA6E290D1A2C6C8500E7CFC6 /* EmailSpam */ = {
+			isa = PBXGroup;
+			children = (
+				BA6E291C1A2C798D00E7CFC6 /* EmailSpam.entitlements */,
+				BA6E29101A2C6C8500E7CFC6 /* ShareViewController.h */,
+				BA6E29111A2C6C8500E7CFC6 /* ShareViewController.m */,
+				BA6E29131A2C6C8500E7CFC6 /* MainInterface.storyboard */,
+				BA6E290E1A2C6C8500E7CFC6 /* Supporting Files */,
+			);
+			path = EmailSpam;
+			sourceTree = "<group>";
+		};
+		BA6E290E1A2C6C8500E7CFC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA6E290F1A2C6C8500E7CFC6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA6E28DE1A2C6BE800E7CFC6 /* AntiiMessageSpam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6E29021A2C6BE800E7CFC6 /* Build configuration list for PBXNativeTarget "AntiiMessageSpam" */;
+			buildPhases = (
+				BA6E28DB1A2C6BE800E7CFC6 /* Sources */,
+				BA6E28DC1A2C6BE800E7CFC6 /* Frameworks */,
+				BA6E28DD1A2C6BE800E7CFC6 /* Resources */,
+				BA6E291B1A2C6C8500E7CFC6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA6E29161A2C6C8500E7CFC6 /* PBXTargetDependency */,
+			);
+			name = AntiiMessageSpam;
+			productName = AntiiMessageSpam;
+			productReference = BA6E28DF1A2C6BE800E7CFC6 /* AntiiMessageSpam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA6E28F71A2C6BE800E7CFC6 /* AntiiMessageSpamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6E29051A2C6BE800E7CFC6 /* Build configuration list for PBXNativeTarget "AntiiMessageSpamTests" */;
+			buildPhases = (
+				BA6E28F41A2C6BE800E7CFC6 /* Sources */,
+				BA6E28F51A2C6BE800E7CFC6 /* Frameworks */,
+				BA6E28F61A2C6BE800E7CFC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA6E28FA1A2C6BE800E7CFC6 /* PBXTargetDependency */,
+			);
+			name = AntiiMessageSpamTests;
+			productName = AntiiMessageSpamTests;
+			productReference = BA6E28F81A2C6BE800E7CFC6 /* AntiiMessageSpamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA6E290B1A2C6C8500E7CFC6 /* EmailSpam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6E29181A2C6C8500E7CFC6 /* Build configuration list for PBXNativeTarget "EmailSpam" */;
+			buildPhases = (
+				BA6E29081A2C6C8500E7CFC6 /* Sources */,
+				BA6E29091A2C6C8500E7CFC6 /* Frameworks */,
+				BA6E290A1A2C6C8500E7CFC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmailSpam;
+			productName = EmailSpam;
+			productReference = BA6E290C1A2C6C8500E7CFC6 /* EmailSpam.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA6E28D71A2C6BE800E7CFC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HL;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Henry Lee";
+				TargetAttributes = {
+					BA6E28DE1A2C6BE800E7CFC6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BA6E28F71A2C6BE800E7CFC6 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = BA6E28DE1A2C6BE800E7CFC6;
+					};
+					BA6E290B1A2C6C8500E7CFC6 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = FL85VR274W;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BA6E28DA1A2C6BE800E7CFC6 /* Build configuration list for PBXProject "AntiiMessageSpam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA6E28D61A2C6BE800E7CFC6;
+			productRefGroup = BA6E28E01A2C6BE800E7CFC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA6E28DE1A2C6BE800E7CFC6 /* AntiiMessageSpam */,
+				BA6E290B1A2C6C8500E7CFC6 /* EmailSpam */,
+				BA6E28F71A2C6BE800E7CFC6 /* AntiiMessageSpamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA6E28DD1A2C6BE800E7CFC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6E28EE1A2C6BE800E7CFC6 /* Main.storyboard in Resources */,
+				BA6E28F31A2C6BE800E7CFC6 /* LaunchScreen.xib in Resources */,
+				BA6E28F01A2C6BE800E7CFC6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6E28F61A2C6BE800E7CFC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6E290A1A2C6C8500E7CFC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6E29141A2C6C8500E7CFC6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA6E28DB1A2C6BE800E7CFC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6E28E81A2C6BE800E7CFC6 /* AppDelegate.m in Sources */,
+				BA6E29291A2F2DC600E7CFC6 /* HLSettingViewController.m in Sources */,
+				BA6E28E51A2C6BE800E7CFC6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6E28F41A2C6BE800E7CFC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6E28FF1A2C6BE800E7CFC6 /* AntiiMessageSpamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6E29081A2C6C8500E7CFC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6E29121A2C6C8500E7CFC6 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA6E28FA1A2C6BE800E7CFC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA6E28DE1A2C6BE800E7CFC6 /* AntiiMessageSpam */;
+			targetProxy = BA6E28F91A2C6BE800E7CFC6 /* PBXContainerItemProxy */;
+		};
+		BA6E29161A2C6C8500E7CFC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA6E290B1A2C6C8500E7CFC6 /* EmailSpam */;
+			targetProxy = BA6E29151A2C6C8500E7CFC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA6E28EC1A2C6BE800E7CFC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA6E28ED1A2C6BE800E7CFC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA6E28F11A2C6BE800E7CFC6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA6E28F21A2C6BE800E7CFC6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA6E29001A2C6BE800E7CFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA6E29011A2C6BE800E7CFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA6E29031A2C6BE800E7CFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AntiiMessageSpam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA6E29041A2C6BE800E7CFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AntiiMessageSpam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BA6E29061A2C6BE800E7CFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AntiiMessageSpamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AntiiMessageSpam.app/AntiiMessageSpam";
+			};
+			name = Debug;
+		};
+		BA6E29071A2C6BE800E7CFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AntiiMessageSpamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AntiiMessageSpam.app/AntiiMessageSpam";
+			};
+			name = Release;
+		};
+		BA6E29191A2C6C8500E7CFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EmailSpam/EmailSpam.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EmailSpam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BA6E291A1A2C6C8500E7CFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EmailSpam/EmailSpam.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = EmailSpam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA6E28DA1A2C6BE800E7CFC6 /* Build configuration list for PBXProject "AntiiMessageSpam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6E29001A2C6BE800E7CFC6 /* Debug */,
+				BA6E29011A2C6BE800E7CFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA6E29021A2C6BE800E7CFC6 /* Build configuration list for PBXNativeTarget "AntiiMessageSpam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6E29031A2C6BE800E7CFC6 /* Debug */,
+				BA6E29041A2C6BE800E7CFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA6E29051A2C6BE800E7CFC6 /* Build configuration list for PBXNativeTarget "AntiiMessageSpamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6E29061A2C6BE800E7CFC6 /* Debug */,
+				BA6E29071A2C6BE800E7CFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA6E29181A2C6C8500E7CFC6 /* Build configuration list for PBXNativeTarget "EmailSpam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6E29191A2C6C8500E7CFC6 /* Debug */,
+				BA6E291A1A2C6C8500E7CFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA6E28D71A2C6BE800E7CFC6 /* Project object */;
+}
