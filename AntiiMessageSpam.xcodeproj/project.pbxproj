@@ -17,6 +17,10 @@
 		BA6E29141A2C6C8500E7CFC6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6E29131A2C6C8500E7CFC6 /* MainInterface.storyboard */; };
 		BA6E29171A2C6C8500E7CFC6 /* EmailSpam.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BA6E290C1A2C6C8500E7CFC6 /* EmailSpam.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BA6E29291A2F2DC600E7CFC6 /* HLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6E29281A2F2DC600E7CFC6 /* HLSettingViewController.m */; };
+		BA6E29321A307E1200E7CFC6 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6E29311A307E1200E7CFC6 /* TesseractOCR.framework */; };
+		BA6E29341A307E2500E7CFC6 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6E29331A307E2500E7CFC6 /* libstdc++.6.0.9.dylib */; };
+		BA6E29361A307E2A00E7CFC6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6E29351A307E2A00E7CFC6 /* CoreImage.framework */; };
+		BA6E29381A307EA500E7CFC6 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = BA6E29371A307EA500E7CFC6 /* tessdata */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,10 @@
 		BA6E291C1A2C798D00E7CFC6 /* EmailSpam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EmailSpam.entitlements; sourceTree = "<group>"; };
 		BA6E29271A2F2DC600E7CFC6 /* HLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSettingViewController.h; sourceTree = "<group>"; };
 		BA6E29281A2F2DC600E7CFC6 /* HLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSettingViewController.m; sourceTree = "<group>"; };
+		BA6E29311A307E1200E7CFC6 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		BA6E29331A307E2500E7CFC6 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		BA6E29351A307E2A00E7CFC6 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		BA6E29371A307EA500E7CFC6 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA6E29361A307E2A00E7CFC6 /* CoreImage.framework in Frameworks */,
+				BA6E29341A307E2500E7CFC6 /* libstdc++.6.0.9.dylib in Frameworks */,
+				BA6E29321A307E1200E7CFC6 /* TesseractOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +111,8 @@
 		BA6E28D61A2C6BE800E7CFC6 = {
 			isa = PBXGroup;
 			children = (
+				BA6E29351A307E2A00E7CFC6 /* CoreImage.framework */,
+				BA6E29331A307E2500E7CFC6 /* libstdc++.6.0.9.dylib */,
 				BA6E28E11A2C6BE800E7CFC6 /* AntiiMessageSpam */,
 				BA6E28FB1A2C6BE800E7CFC6 /* AntiiMessageSpamTests */,
 				BA6E290D1A2C6C8500E7CFC6 /* EmailSpam */,
@@ -161,7 +174,9 @@
 		BA6E290D1A2C6C8500E7CFC6 /* EmailSpam */ = {
 			isa = PBXGroup;
 			children = (
+				BA6E29311A307E1200E7CFC6 /* TesseractOCR.framework */,
 				BA6E291C1A2C798D00E7CFC6 /* EmailSpam.entitlements */,
+				BA6E29371A307EA500E7CFC6 /* tessdata */,
 				BA6E29101A2C6C8500E7CFC6 /* ShareViewController.h */,
 				BA6E29111A2C6C8500E7CFC6 /* ShareViewController.m */,
 				BA6E29131A2C6C8500E7CFC6 /* MainInterface.storyboard */,
@@ -306,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6E29141A2C6C8500E7CFC6 /* MainInterface.storyboard in Resources */,
+				BA6E29381A307EA500E7CFC6 /* tessdata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +471,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EmailSpam",
+				);
 				INFOPLIST_FILE = AntiiMessageSpam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -465,8 +486,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EmailSpam",
+				);
 				INFOPLIST_FILE = AntiiMessageSpam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -508,15 +535,21 @@
 		BA6E29191A2C6C8500E7CFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = EmailSpam/EmailSpam.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EmailSpam",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = EmailSpam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -526,11 +559,18 @@
 		BA6E291A1A2C6C8500E7CFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_ENTITLEMENTS = EmailSpam/EmailSpam.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EmailSpam",
+				);
 				INFOPLIST_FILE = EmailSpam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;

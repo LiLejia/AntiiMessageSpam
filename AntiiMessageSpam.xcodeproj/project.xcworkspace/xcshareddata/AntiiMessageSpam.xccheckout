@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>47F56AA0-F04B-4FA8-9D43-E79D37A07ACD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AntiiMessageSpam</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>515D266054F1B3C7A7FF95A4058273D756CACADB</key>
+		<string>ssh://github.com/LiLejia/AntiiMessageSpam.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AntiiMessageSpam.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>515D266054F1B3C7A7FF95A4058273D756CACADB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/LiLejia/AntiiMessageSpam.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>515D266054F1B3C7A7FF95A4058273D756CACADB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>515D266054F1B3C7A7FF95A4058273D756CACADB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AntiiMessageSpam</string>
+		</dict>
+	</array>
+</dict>
+</plist>

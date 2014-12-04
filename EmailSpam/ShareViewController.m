@@ -8,8 +8,9 @@
 
 #import "ShareViewController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
+#import <TesseractOCR/TesseractOCR.h>
 
-@interface ShareViewController ()
+@interface ShareViewController ()<TesseractDelegate>
 @property (nonatomic,strong) NSMutableArray *uploadImageArray;
 @end
 
@@ -49,11 +50,17 @@
                     }
                     NSURL *imageURL = (NSURL *)provider;
                     NSLog(@"image URL:%@",imageURL);
+                    
                     dispatch_async(dispatch_get_main_queue(), ^{
+                        
+                        UIImage *image = [UIImage imageWithContentsOfFile:[imageURL path]];
+                        [self recognizeImageWithTesseract:image];
+                        
                         if(!self.uploadImageArray){
                             self.uploadImageArray = [NSMutableArray array];
                         }
                         [self.uploadImageArray addObject:imageURL];
+                        
                     });
                 }];
                 
@@ -61,6 +68,34 @@
         }
     }
 }
+
+-(void)recognizeImageWithTesseract:(UIImage *)img
+{
+    NSDate *date = [NSDate date];
+    //only for test//
+//    UIImage *testb = [img blackAndWhite];
+    
+    Tesseract* tesseract = [[Tesseract alloc] initWithLanguage:@"eng"];
+    tesseract.delegate = self;
+    
+    //    [tesseract setVariableValue:@"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ" forKey:@"tessedit_char_whitelist"]; //limit search
+    [tesseract setVariableValue:@"0123456789abcdefghijklmnopqrstuvwxyz@." forKey:@"tessedit_char_whitelist"];
+    
+    [tesseract setImage:[img blackAndWhite]]; //image to check
+    //是像素不是点
+    [tesseract setRect:CGRectMake(100, 40, 440, 88)]; //optional: set the rectangle to recognize text in
+    [tesseract recognize];
+    
+    NSString *recognizedText = [tesseract recognizedText];
+    
+    NSLog(@"recognised time :%f",[date timeIntervalSinceNow]);
+    
+    NSLog(@"%@", recognizedText);
+    
+    tesseract = nil; //deallocate and free all memory
+}
+
+
 
 - (void)didSelectCancel{
     
